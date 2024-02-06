@@ -1,0 +1,1 @@
+savedcmd_/home/tnaton/little-penguin/Assignement04/main.mod := printf '%s\n'   main.o | awk '!x[$$0]++ { print("/home/tnaton/little-penguin/Assignement04/"$$0) }' > /home/tnaton/little-penguin/Assignement04/main.mod
