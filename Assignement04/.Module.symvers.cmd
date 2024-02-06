@@ -1,1 +1,0 @@
-savedcmd_/home/tnaton/little-penguin/Assignement04/Module.symvers :=  scripts/mod/modpost -M        -o /home/tnaton/little-penguin/Assignement04/Module.symvers -n -T /home/tnaton/little-penguin/Assignement04/modules.order -i Module.symvers -e 
