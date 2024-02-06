@@ -1,0 +1,20 @@
+Subject: [PATCH] build: change EXTRAVERSION for something cooler
+From: Théodore NATON <tnaton@student.42.fr>
+
+I changed the EXTRAVERSION variable to something cooler than rc3
+
+Signed-off-by: Théodore NATON <tnaton@student.42.fr>
+---
+diff --git a/Makefile b/Makefile
+index a171eafce2a3..daf802c0cf64 100644
+--- a/Makefile
++++ b/Makefile
+@@ -2,7 +2,7 @@
+ VERSION = 6
+ PATCHLEVEL = 8
+ SUBLEVEL = 0
+-EXTRAVERSION = -rc3
++EXTRAVERSION = -thor_kernel
+ NAME = Hurr durr I'ma ninja sloth
+ 
+ # *DOCUMENTATION*

@@ -1,0 +1,491 @@
+Feb  6 15:37:12 tnaton kernel: klogd 1.5.1, log source = /proc/kmsg started.
+Feb  6 15:37:12 tnaton kernel: Cannot find map file.
+Feb  6 15:37:12 tnaton kernel: Loaded 187811 symbols from 4 modules.
+Feb  6 15:37:12 tnaton kernel: [    0.000000] Linux version 6.8.0-thor_kerneltnaton-g99bd3cb0d12e-dirty (tnaton@tnaton) (gcc (GCC) 13.2.0, GNU ld (GNU Binutils) 2.41) #5 SMP PREEMPT_DYNAMIC Tue Feb  6 15:33:30 CET 2024
+Feb  6 15:37:12 tnaton kernel: [    0.000000] Command line: BOOT_IMAGE=/vmlinuz-6.8-rc3-little-penguin root=PARTUUID=1c458f0e-03 ro
+Feb  6 15:37:12 tnaton kernel: [    0.000000] BIOS-provided physical RAM map:
+Feb  6 15:37:12 tnaton kernel: [    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009fbff] usable
+Feb  6 15:37:12 tnaton kernel: [    0.000000] BIOS-e820: [mem 0x000000000009fc00-0x000000000009ffff] reserved
+Feb  6 15:37:12 tnaton kernel: [    0.000000] BIOS-e820: [mem 0x00000000000f0000-0x00000000000fffff] reserved
+Feb  6 15:37:12 tnaton kernel: [    0.000000] BIOS-e820: [mem 0x0000000000100000-0x00000000dffeffff] usable
+Feb  6 15:37:12 tnaton kernel: [    0.000000] BIOS-e820: [mem 0x00000000dfff0000-0x00000000dfffffff] ACPI data
+Feb  6 15:37:12 tnaton kernel: [    0.000000] BIOS-e820: [mem 0x00000000fec00000-0x00000000fec00fff] reserved
+Feb  6 15:37:12 tnaton kernel: [    0.000000] BIOS-e820: [mem 0x00000000fee00000-0x00000000fee00fff] reserved
+Feb  6 15:37:12 tnaton kernel: [    0.000000] BIOS-e820: [mem 0x00000000fffc0000-0x00000000ffffffff] reserved
+Feb  6 15:37:12 tnaton kernel: [    0.000000] BIOS-e820: [mem 0x0000000100000000-0x000000025a3fffff] usable
+Feb  6 15:37:12 tnaton kernel: [    0.000000] NX (Execute Disable) protection: active
+Feb  6 15:37:12 tnaton kernel: [    0.000000] APIC: Static calls initialized
+Feb  6 15:37:12 tnaton kernel: [    0.000000] SMBIOS 2.5 present.
+Feb  6 15:37:12 tnaton kernel: [    0.000000] DMI: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Feb  6 15:37:12 tnaton kernel: [    0.000000] Hypervisor detected: KVM
+Feb  6 15:37:12 tnaton kernel: [    0.000000] kvm-clock: Using msrs 4b564d01 and 4b564d00
+Feb  6 15:37:12 tnaton kernel: [    0.000000] kvm-clock: using sched offset of 3643064533 cycles
+Feb  6 15:37:12 tnaton kernel: [    0.000002] clocksource: kvm-clock: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns: 881590591483 ns
+Feb  6 15:37:12 tnaton kernel: [    0.000003] tsc: Detected 2111.998 MHz processor
+Feb  6 15:37:12 tnaton kernel: [    0.000337] e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+Feb  6 15:37:12 tnaton kernel: [    0.000339] e820: remove [mem 0x000a0000-0x000fffff] usable
+Feb  6 15:37:12 tnaton kernel: [    0.000341] last_pfn = 0x25a400 max_arch_pfn = 0x400000000
+Feb  6 15:37:12 tnaton kernel: [    0.000345] MTRRs disabled by BIOS
+Feb  6 15:37:12 tnaton kernel: [    0.000347] x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+Feb  6 15:37:12 tnaton kernel: [    0.000360] last_pfn = 0xdfff0 max_arch_pfn = 0x400000000
+Feb  6 15:37:12 tnaton kernel: [    0.000391] found SMP MP-table at [mem 0x0009fff0-0x0009ffff]
+Feb  6 15:37:12 tnaton kernel: [    0.000396] Incomplete global flushes, disabling PCID
+Feb  6 15:37:12 tnaton kernel: [    0.000748] ACPI: Early table checksum verification disabled
+Feb  6 15:37:12 tnaton kernel: [    0.000751] ACPI: RSDP 0x00000000000E0000 000024 (v02 VBOX  )
+Feb  6 15:37:12 tnaton kernel: [    0.000753] ACPI: XSDT 0x00000000DFFF0030 00003C (v01 VBOX   VBOXXSDT 00000001 ASL  00000061)
+Feb  6 15:37:12 tnaton kernel: [    0.000757] ACPI: FACP 0x00000000DFFF00F0 0000F4 (v04 VBOX   VBOXFACP 00000001 ASL  00000061)
+Feb  6 15:37:12 tnaton kernel: [    0.000760] ACPI: DSDT 0x00000000DFFF04C0 002325 (v02 VBOX   VBOXBIOS 00000002 INTL 20200925)
+Feb  6 15:37:12 tnaton kernel: [    0.000762] ACPI: FACS 0x00000000DFFF0200 000040
+Feb  6 15:37:12 tnaton kernel: [    0.000763] ACPI: FACS 0x00000000DFFF0200 000040
+Feb  6 15:37:12 tnaton kernel: [    0.000765] ACPI: APIC 0x00000000DFFF0240 0000AC (v02 VBOX   VBOXAPIC 00000001 ASL  00000061)
+Feb  6 15:37:12 tnaton kernel: [    0.000766] ACPI: SSDT 0x00000000DFFF02F0 0001CC (v01 VBOX   VBOXCPUT 00000002 INTL 20200925)
+Feb  6 15:37:12 tnaton kernel: [    0.000768] ACPI: Reserving FACP table memory at [mem 0xdfff00f0-0xdfff01e3]
+Feb  6 15:37:12 tnaton kernel: [    0.000769] ACPI: Reserving DSDT table memory at [mem 0xdfff04c0-0xdfff27e4]
+Feb  6 15:37:12 tnaton kernel: [    0.000769] ACPI: Reserving FACS table memory at [mem 0xdfff0200-0xdfff023f]
+Feb  6 15:37:12 tnaton kernel: [    0.000769] ACPI: Reserving FACS table memory at [mem 0xdfff0200-0xdfff023f]
+Feb  6 15:37:12 tnaton kernel: [    0.000770] ACPI: Reserving APIC table memory at [mem 0xdfff0240-0xdfff02eb]
+Feb  6 15:37:12 tnaton kernel: [    0.000770] ACPI: Reserving SSDT table memory at [mem 0xdfff02f0-0xdfff04bb]
+Feb  6 15:37:12 tnaton kernel: [    0.000884] No NUMA configuration found
+Feb  6 15:37:12 tnaton kernel: [    0.000884] Faking a node at [mem 0x0000000000000000-0x000000025a3fffff]
+Feb  6 15:37:12 tnaton kernel: [    0.000885] NODE_DATA(0) allocated [mem 0x25a3f8000-0x25a3fbfff]
+Feb  6 15:37:12 tnaton kernel: [    0.000892] Zone ranges:
+Feb  6 15:37:12 tnaton kernel: [    0.000893]   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+Feb  6 15:37:12 tnaton kernel: [    0.000894]   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+Feb  6 15:37:12 tnaton kernel: [    0.000894]   Normal   [mem 0x0000000100000000-0x000000025a3fffff]
+Feb  6 15:37:12 tnaton kernel: [    0.000895] Movable zone start for each node
+Feb  6 15:37:12 tnaton kernel: [    0.000895] Early memory node ranges
+Feb  6 15:37:12 tnaton kernel: [    0.000895]   node   0: [mem 0x0000000000001000-0x000000000009efff]
+Feb  6 15:37:12 tnaton kernel: [    0.000896]   node   0: [mem 0x0000000000100000-0x00000000dffeffff]
+Feb  6 15:37:12 tnaton kernel: [    0.000897]   node   0: [mem 0x0000000100000000-0x000000025a3fffff]
+Feb  6 15:37:12 tnaton kernel: [    0.000898] Initmem setup node 0 [mem 0x0000000000001000-0x000000025a3fffff]
+Feb  6 15:37:12 tnaton kernel: [    0.001148] On node 0, zone DMA: 1 pages in unavailable ranges
+Feb  6 15:37:12 tnaton kernel: [    0.001161] On node 0, zone DMA: 97 pages in unavailable ranges
+Feb  6 15:37:12 tnaton kernel: [    0.024639] On node 0, zone Normal: 16 pages in unavailable ranges
+Feb  6 15:37:12 tnaton kernel: [    0.024736] On node 0, zone Normal: 23552 pages in unavailable ranges
+Feb  6 15:37:12 tnaton kernel: [    0.024986] ACPI: PM-Timer IO Port: 0x4008
+Feb  6 15:37:12 tnaton kernel: [    0.025024] IOAPIC[0]: apic_id 12, version 32, address 0xfec00000, GSI 0-23
+Feb  6 15:37:12 tnaton kernel: [    0.025026] ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+Feb  6 15:37:12 tnaton kernel: [    0.025028] ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 low level)
+Feb  6 15:37:12 tnaton kernel: [    0.025031] ACPI: Using ACPI (MADT) for SMP configuration information
+Feb  6 15:37:12 tnaton kernel: [    0.025032] smpboot: Allowing 12 CPUs, 0 hotplug CPUs
+Feb  6 15:37:12 tnaton kernel: [    0.025044] PM: hibernation: Registered nosave memory: [mem 0x00000000-0x00000fff]
+Feb  6 15:37:12 tnaton kernel: [    0.025045] PM: hibernation: Registered nosave memory: [mem 0x0009f000-0x0009ffff]
+Feb  6 15:37:12 tnaton kernel: [    0.025045] PM: hibernation: Registered nosave memory: [mem 0x000a0000-0x000effff]
+Feb  6 15:37:12 tnaton kernel: [    0.025046] PM: hibernation: Registered nosave memory: [mem 0x000f0000-0x000fffff]
+Feb  6 15:37:12 tnaton kernel: [    0.025046] PM: hibernation: Registered nosave memory: [mem 0xdfff0000-0xdfffffff]
+Feb  6 15:37:12 tnaton kernel: [    0.025047] PM: hibernation: Registered nosave memory: [mem 0xe0000000-0xfebfffff]
+Feb  6 15:37:12 tnaton kernel: [    0.025047] PM: hibernation: Registered nosave memory: [mem 0xfec00000-0xfec00fff]
+Feb  6 15:37:12 tnaton kernel: [    0.025047] PM: hibernation: Registered nosave memory: [mem 0xfec01000-0xfedfffff]
+Feb  6 15:37:12 tnaton kernel: [    0.025048] PM: hibernation: Registered nosave memory: [mem 0xfee00000-0xfee00fff]
+Feb  6 15:37:12 tnaton kernel: [    0.025048] PM: hibernation: Registered nosave memory: [mem 0xfee01000-0xfffbffff]
+Feb  6 15:37:12 tnaton kernel: [    0.025048] PM: hibernation: Registered nosave memory: [mem 0xfffc0000-0xffffffff]
+Feb  6 15:37:12 tnaton kernel: [    0.025049] [mem 0xe0000000-0xfebfffff] available for PCI devices
+Feb  6 15:37:12 tnaton kernel: [    0.025050] Booting paravirtualized kernel on KVM
+Feb  6 15:37:12 tnaton kernel: [    0.025051] clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1910969940391419 ns
+Feb  6 15:37:12 tnaton kernel: [    0.029215] setup_percpu: NR_CPUS:64 nr_cpumask_bits:12 nr_cpu_ids:12 nr_node_ids:1
+Feb  6 15:37:12 tnaton kernel: [    0.029900] percpu: Embedded 57 pages/cpu s193576 r8192 d31704 u262144
+Feb  6 15:37:12 tnaton kernel: [    0.029904] pcpu-alloc: s193576 r8192 d31704 u262144 alloc=1*2097152
+Feb  6 15:37:12 tnaton kernel: [    0.029905] pcpu-alloc: [0] 00 01 02 03 04 05 06 07 [0] 08 09 10 11 -- -- -- -- 
+Feb  6 15:37:12 tnaton kernel: [    0.029917] Kernel command line: BOOT_IMAGE=/vmlinuz-6.8-rc3-little-penguin root=PARTUUID=1c458f0e-03 ro
+Feb  6 15:37:12 tnaton kernel: [    0.029934] Unknown kernel command line parameters "BOOT_IMAGE=/vmlinuz-6.8-rc3-little-penguin", will be passed to user space.
+Feb  6 15:37:12 tnaton kernel: [    0.029951] random: crng init done
+Feb  6 15:37:12 tnaton kernel: [    0.032564] Dentry cache hash table entries: 2097152 (order: 12, 16777216 bytes, linear)
+Feb  6 15:37:12 tnaton kernel: [    0.033833] Inode-cache hash table entries: 1048576 (order: 11, 8388608 bytes, linear)
+Feb  6 15:37:12 tnaton kernel: [    0.033962] Fallback order for Node 0: 0 
+Feb  6 15:37:12 tnaton kernel: [    0.033965] Built 1 zonelists, mobility grouping on.  Total pages: 2298976
+Feb  6 15:37:12 tnaton kernel: [    0.033965] Policy zone: Normal
+Feb  6 15:37:12 tnaton kernel: [    0.033967] mem auto-init: stack:all(zero), heap alloc:off, heap free:off
+Feb  6 15:37:12 tnaton kernel: [    0.033969] software IO TLB: area num 16.
+Feb  6 15:37:12 tnaton kernel: [    0.068070] Memory: 9057304K/9342520K available (20480K kernel code, 3051K rwdata, 7164K rodata, 2868K init, 2400K bss, 284956K reserved, 0K cma-reserved)
+Feb  6 15:37:12 tnaton kernel: [    0.068096] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=12, Nodes=1
+Feb  6 15:37:12 tnaton kernel: [    0.068102] Kernel/User page tables isolation: enabled
+Feb  6 15:37:12 tnaton kernel: [    0.068971] Dynamic Preempt: voluntary
+Feb  6 15:37:12 tnaton kernel: [    0.069331] rcu: Preemptible hierarchical RCU implementation.
+Feb  6 15:37:12 tnaton kernel: [    0.069332] rcu: ^IRCU event tracing is enabled.
+Feb  6 15:37:12 tnaton kernel: [    0.069332] rcu: ^IRCU restricting CPUs from NR_CPUS=64 to nr_cpu_ids=12.
+Feb  6 15:37:12 tnaton kernel: [    0.069333] ^ITrampoline variant of Tasks RCU enabled.
+Feb  6 15:37:12 tnaton kernel: [    0.069334] ^ITracing variant of Tasks RCU enabled.
+Feb  6 15:37:12 tnaton kernel: [    0.069334] rcu: RCU calculated value of scheduler-enlistment delay is 100 jiffies.
+Feb  6 15:37:12 tnaton kernel: [    0.069334] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=12
+Feb  6 15:37:12 tnaton kernel: [    0.070241] NR_IRQS: 4352, nr_irqs: 520, preallocated irqs: 16
+Feb  6 15:37:12 tnaton kernel: [    0.070402] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+Feb  6 15:37:12 tnaton kernel: [    0.074194] Console: colour VGA+ 80x25
+Feb  6 15:37:12 tnaton kernel: [    0.074196] printk: legacy console [tty0] enabled
+Feb  6 15:37:12 tnaton kernel: [    0.092763] ACPI: Core revision 20230628
+Feb  6 15:37:12 tnaton kernel: [    0.092962] APIC: Switch to symmetric I/O mode setup
+Feb  6 15:37:12 tnaton kernel: [    0.093255] x2apic enabled
+Feb  6 15:37:12 tnaton kernel: [    0.093538] APIC: Switched APIC routing to: physical x2apic
+Feb  6 15:37:12 tnaton kernel: [    0.094443] ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+Feb  6 15:37:12 tnaton kernel: [    0.094615] clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x1e71768ef8b, max_idle_ns: 440795218977 ns
+Feb  6 15:37:12 tnaton kernel: [    0.094899] Calibrating delay loop (skipped) preset value.. 4223.99 BogoMIPS (lpj=2111998)
+Feb  6 15:37:12 tnaton kernel: [    0.095203] Last level iTLB entries: 4KB 0, 2MB 0, 4MB 0
+Feb  6 15:37:12 tnaton kernel: [    0.095350] Last level dTLB entries: 4KB 0, 2MB 0, 4MB 0, 1GB 0
+Feb  6 15:37:12 tnaton kernel: [    0.095511] Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+Feb  6 15:37:12 tnaton kernel: [    0.095738] Spectre V2 : Mitigation: Retpolines
+Feb  6 15:37:12 tnaton kernel: [    0.095871] Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
+Feb  6 15:37:12 tnaton kernel: [    0.095896] Spectre V2 : Spectre v2 / SpectreRSB : Filling RSB on VMEXIT
+Feb  6 15:37:12 tnaton kernel: [    0.095896] Speculative Store Bypass: Vulnerable
+Feb  6 15:37:12 tnaton kernel: [    0.095896] MDS: Mitigation: Clear CPU buffers
+Feb  6 15:37:12 tnaton kernel: [    0.095896] x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+Feb  6 15:37:12 tnaton kernel: [    0.095896] x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+Feb  6 15:37:12 tnaton kernel: [    0.095896] x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+Feb  6 15:37:12 tnaton kernel: [    0.095896] x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+Feb  6 15:37:12 tnaton kernel: [    0.095896] x86/fpu: Enabled xstate features 0x7, context size is 832 bytes, using 'standard' format.
+Feb  6 15:37:12 tnaton kernel: [    0.108728] Freeing SMP alternatives memory: 56K
+Feb  6 15:37:12 tnaton kernel: [    0.108873] pid_max: default: 32768 minimum: 301
+Feb  6 15:37:12 tnaton kernel: [    0.108896] LSM: initializing lsm=capability,selinux,bpf,integrity
+Feb  6 15:37:12 tnaton kernel: [    0.108896] SELinux:  Initializing.
+Feb  6 15:37:12 tnaton kernel: [    0.108902] LSM support for eBPF active
+Feb  6 15:37:12 tnaton kernel: [    0.109286] Mount-cache hash table entries: 32768 (order: 6, 262144 bytes, linear)
+Feb  6 15:37:12 tnaton kernel: [    0.109517] Mountpoint-cache hash table entries: 32768 (order: 6, 262144 bytes, linear)
+Feb  6 15:37:12 tnaton kernel: [    0.214531] smpboot: CPU0: 12th Gen Intel(R) Core(TM) i7-12700 (family: 0x6, model: 0x97, stepping: 0x2)
+Feb  6 15:37:12 tnaton kernel: [    0.214878] RCU Tasks: Setting shift to 4 and lim to 1 rcu_task_cb_adjust=1.
+Feb  6 15:37:12 tnaton kernel: [    0.214896] RCU Tasks Trace: Setting shift to 4 and lim to 1 rcu_task_cb_adjust=1.
+Feb  6 15:37:12 tnaton kernel: [    0.214896] Performance Events: unsupported p6 CPU model 151 no PMU driver, software events only.
+Feb  6 15:37:12 tnaton kernel: [    0.214901] signal: max sigframe size: 1776
+Feb  6 15:37:12 tnaton kernel: [    0.215050] rcu: Hierarchical SRCU implementation.
+Feb  6 15:37:12 tnaton kernel: [    0.215197] rcu: ^IMax phase no-delay instances is 400.
+Feb  6 15:37:12 tnaton kernel: [    0.215468] smp: Bringing up secondary CPUs ...
+Feb  6 15:37:12 tnaton kernel: [    0.215651] smpboot: x86: Booting SMP configuration:
+Feb  6 15:37:12 tnaton kernel: [    0.215802] .... node  #0, CPUs:        #1  #2  #3  #4  #5  #6  #7  #8  #9 #10 #11
+Feb  6 15:37:12 tnaton kernel: [    0.235136] smp: Brought up 1 node, 12 CPUs
+Feb  6 15:37:12 tnaton kernel: [    0.235514] smpboot: Max logical packages: 1
+Feb  6 15:37:12 tnaton kernel: [    0.235656] smpboot: Total of 12 processors activated (50687.95 BogoMIPS)
+Feb  6 15:37:12 tnaton kernel: [    0.237192] devtmpfs: initialized
+Feb  6 15:37:12 tnaton kernel: [    0.238066] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+Feb  6 15:37:12 tnaton kernel: [    0.238898] futex hash table entries: 4096 (order: 6, 262144 bytes, linear)
+Feb  6 15:37:12 tnaton kernel: [    0.239156] PM: RTC time: 14:37:03, date: 2024-02-06
+Feb  6 15:37:12 tnaton kernel: [    0.240505] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+Feb  6 15:37:12 tnaton kernel: [    0.240731] audit: initializing netlink subsys (disabled)
+Feb  6 15:37:12 tnaton kernel: [    0.240909] audit: type=2000 audit(1707230228.543:1): state=initialized audit_enabled=0 res=1
+Feb  6 15:37:12 tnaton kernel: [    0.240935] thermal_sys: Registered thermal governor 'step_wise'
+Feb  6 15:37:12 tnaton kernel: [    0.241428] thermal_sys: Registered thermal governor 'user_space'
+Feb  6 15:37:12 tnaton kernel: [    0.241613] cpuidle: using governor menu
+Feb  6 15:37:12 tnaton kernel: [    0.241969] PCI: Using configuration type 1 for base access
+Feb  6 15:37:12 tnaton kernel: [    0.242177] kprobes: kprobe jump-optimization is enabled. All kprobes are optimized if possible.
+Feb  6 15:37:12 tnaton kernel: [    0.246177] HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+Feb  6 15:37:12 tnaton kernel: [    0.246374] HugeTLB: 28 KiB vmemmap can be freed for a 2.00 MiB page
+Feb  6 15:37:12 tnaton kernel: [    0.262897] raid6: avx2x4   gen() 47434 MB/s
+Feb  6 15:37:12 tnaton kernel: [    0.279898] raid6: avx2x2   gen() 49836 MB/s
+Feb  6 15:37:12 tnaton kernel: [    0.296897] raid6: avx2x1   gen() 47320 MB/s
+Feb  6 15:37:12 tnaton kernel: [    0.297044] raid6: using algorithm avx2x2 gen() 49836 MB/s
+Feb  6 15:37:12 tnaton kernel: [    0.313897] raid6: .... xor() 31843 MB/s, rmw enabled
+Feb  6 15:37:12 tnaton kernel: [    0.314058] raid6: using avx2x2 recovery algorithm
+Feb  6 15:37:12 tnaton kernel: [    0.314243] ACPI: Added _OSI(Module Device)
+Feb  6 15:37:12 tnaton kernel: [    0.314390] ACPI: Added _OSI(Processor Device)
+Feb  6 15:37:12 tnaton kernel: [    0.314537] ACPI: Added _OSI(3.0 _SCP Extensions)
+Feb  6 15:37:12 tnaton kernel: [    0.314693] ACPI: Added _OSI(Processor Aggregator Device)
+Feb  6 15:37:12 tnaton kernel: [    0.315298] ACPI: 2 ACPI AML tables successfully acquired and loaded
+Feb  6 15:37:12 tnaton kernel: [    0.316200] ACPI: _OSC evaluation for CPUs failed, trying _PDC
+Feb  6 15:37:12 tnaton kernel: [    0.316200] ACPI: Interpreter enabled
+Feb  6 15:37:12 tnaton kernel: [    0.316336] ACPI: PM: (supports S0 S5)
+Feb  6 15:37:12 tnaton kernel: [    0.316899] ACPI: Using IOAPIC for interrupt routing
+Feb  6 15:37:12 tnaton kernel: [    0.317125] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+Feb  6 15:37:12 tnaton kernel: [    0.317392] PCI: Using E820 reservations for host bridge windows
+Feb  6 15:37:12 tnaton kernel: [    0.317615] ACPI: Enabled 2 GPEs in block 00 to 07
+Feb  6 15:37:12 tnaton kernel: [    0.319699] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+Feb  6 15:37:12 tnaton kernel: [    0.319884] acpi PNP0A03:00: _OSC: OS supports [ASPM ClockPM Segments MSI HPX-Type3]
+Feb  6 15:37:12 tnaton kernel: [    0.319897] acpi PNP0A03:00: _OSC: not requesting OS control; OS requires [ExtendedConfig ASPM ClockPM MSI]
+Feb  6 15:37:12 tnaton kernel: [    0.320285] acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended configuration space under this bridge
+Feb  6 15:37:12 tnaton kernel: [    0.320640] PCI host bridge to bus 0000:00
+Feb  6 15:37:12 tnaton kernel: [    0.320897] pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+Feb  6 15:37:12 tnaton kernel: [    0.321093] pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+Feb  6 15:37:12 tnaton kernel: [    0.321287] pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+Feb  6 15:37:12 tnaton kernel: [    0.321520] pci_bus 0000:00: root bus resource [mem 0xe0000000-0xfdffffff window]
+Feb  6 15:37:12 tnaton kernel: [    0.321755] pci_bus 0000:00: root bus resource [bus 00-ff]
+Feb  6 15:37:12 tnaton kernel: [    0.321986] pci 0000:00:00.0: [8086:1237] type 00 class 0x060000 conventional PCI endpoint
+Feb  6 15:37:12 tnaton kernel: [    0.322525] pci 0000:00:01.0: [8086:7000] type 00 class 0x060100 conventional PCI endpoint
+Feb  6 15:37:12 tnaton kernel: [    0.323266] pci 0000:00:01.1: [8086:7111] type 00 class 0x01018a conventional PCI endpoint
+Feb  6 15:37:12 tnaton kernel: [    0.323726] pci 0000:00:01.1: BAR 4 [io  0xd000-0xd00f]
+Feb  6 15:37:12 tnaton kernel: [    0.323982] pci 0000:00:01.1: BAR 0 [io  0x01f0-0x01f7]: legacy IDE quirk
+Feb  6 15:37:12 tnaton kernel: [    0.324177] pci 0000:00:01.1: BAR 1 [io  0x03f6]: legacy IDE quirk
+Feb  6 15:37:12 tnaton kernel: [    0.324361] pci 0000:00:01.1: BAR 2 [io  0x0170-0x0177]: legacy IDE quirk
+Feb  6 15:37:12 tnaton kernel: [    0.324555] pci 0000:00:01.1: BAR 3 [io  0x0376]: legacy IDE quirk
+Feb  6 15:37:12 tnaton kernel: [    0.324830] pci 0000:00:02.0: [80ee:beef] type 00 class 0x030000 conventional PCI endpoint
+Feb  6 15:37:12 tnaton kernel: [    0.327071] pci 0000:00:02.0: BAR 0 [mem 0xe0000000-0xe0ffffff pref]
+Feb  6 15:37:12 tnaton kernel: [    0.341973] pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+Feb  6 15:37:12 tnaton kernel: [    0.343045] pci 0000:00:03.0: [8086:100e] type 00 class 0x020000 conventional PCI endpoint
+Feb  6 15:37:12 tnaton kernel: [    0.345956] pci 0000:00:03.0: BAR 0 [mem 0xf0000000-0xf001ffff]
+Feb  6 15:37:12 tnaton kernel: [    0.349929] pci 0000:00:03.0: BAR 2 [io  0xd010-0xd017]
+Feb  6 15:37:12 tnaton kernel: [    0.363015] pci 0000:00:04.0: [80ee:cafe] type 00 class 0x088000 conventional PCI endpoint
+Feb  6 15:37:12 tnaton kernel: [    0.365908] pci 0000:00:04.0: BAR 0 [io  0xd020-0xd03f]
+Feb  6 15:37:12 tnaton kernel: [    0.367938] pci 0000:00:04.0: BAR 1 [mem 0xf0400000-0xf07fffff]
+Feb  6 15:37:12 tnaton kernel: [    0.370897] pci 0000:00:04.0: BAR 2 [mem 0xf0800000-0xf0803fff pref]
+Feb  6 15:37:12 tnaton kernel: [    0.381069] pci 0000:00:05.0: [8086:2415] type 00 class 0x040100 conventional PCI endpoint
+Feb  6 15:37:12 tnaton kernel: [    0.381406] pci 0000:00:05.0: BAR 0 [io  0xd100-0xd1ff]
+Feb  6 15:37:12 tnaton kernel: [    0.381933] pci 0000:00:05.0: BAR 1 [io  0xd200-0xd23f]
+Feb  6 15:37:12 tnaton kernel: [    0.382388] pci 0000:00:06.0: [106b:003f] type 00 class 0x0c0310 conventional PCI endpoint
+Feb  6 15:37:12 tnaton kernel: [    0.383032] pci 0000:00:06.0: BAR 0 [mem 0xf0804000-0xf0804fff]
+Feb  6 15:37:12 tnaton kernel: [    0.401369] pci 0000:00:07.0: [8086:7113] type 00 class 0x068000 conventional PCI endpoint
+Feb  6 15:37:12 tnaton kernel: [    0.402452] pci 0000:00:07.0: quirk: [io  0x4000-0x403f] claimed by PIIX4 ACPI
+Feb  6 15:37:12 tnaton kernel: [    0.402909] pci 0000:00:07.0: quirk: [io  0x4100-0x410f] claimed by PIIX4 SMB
+Feb  6 15:37:12 tnaton kernel: [    0.403276] pci 0000:00:0b.0: [8086:265c] type 00 class 0x0c0320 conventional PCI endpoint
+Feb  6 15:37:12 tnaton kernel: [    0.405949] pci 0000:00:0b.0: BAR 0 [mem 0xf0805000-0xf0805fff]
+Feb  6 15:37:12 tnaton kernel: [    0.424001] pci 0000:00:0d.0: [8086:2829] type 00 class 0x010601 conventional PCI endpoint
+Feb  6 15:37:12 tnaton kernel: [    0.426912] pci 0000:00:0d.0: BAR 0 [io  0xd240-0xd247]
+Feb  6 15:37:12 tnaton kernel: [    0.429912] pci 0000:00:0d.0: BAR 1 [io  0xd248-0xd24b]
+Feb  6 15:37:12 tnaton kernel: [    0.433920] pci 0000:00:0d.0: BAR 2 [io  0xd250-0xd257]
+Feb  6 15:37:12 tnaton kernel: [    0.437909] pci 0000:00:0d.0: BAR 3 [io  0xd258-0xd25b]
+Feb  6 15:37:12 tnaton kernel: [    0.441901] pci 0000:00:0d.0: BAR 4 [io  0xd260-0xd26f]
+Feb  6 15:37:12 tnaton kernel: [    0.443938] pci 0000:00:0d.0: BAR 5 [mem 0xf0806000-0xf0807fff]
+Feb  6 15:37:12 tnaton kernel: [    0.448317] ACPI: PCI: Interrupt link LNKA configured for IRQ 11
+Feb  6 15:37:12 tnaton kernel: [    0.448581] ACPI: PCI: Interrupt link LNKB configured for IRQ 10
+Feb  6 15:37:12 tnaton kernel: [    0.448796] ACPI: PCI: Interrupt link LNKC configured for IRQ 9
+Feb  6 15:37:12 tnaton kernel: [    0.448931] ACPI: PCI: Interrupt link LNKD configured for IRQ 11
+Feb  6 15:37:12 tnaton kernel: [    0.449220] iommu: Default domain type: Translated
+Feb  6 15:37:12 tnaton kernel: [    0.449503] iommu: DMA domain TLB invalidation policy: lazy mode
+Feb  6 15:37:12 tnaton kernel: [    0.449906] SCSI subsystem initialized
+Feb  6 15:37:12 tnaton kernel: [    0.450121] libata version 3.00 loaded.
+Feb  6 15:37:12 tnaton kernel: [    0.450121] ACPI: bus type USB registered
+Feb  6 15:37:12 tnaton kernel: [    0.450121] usbcore: registered new interface driver usbfs
+Feb  6 15:37:12 tnaton kernel: [    0.450279] usbcore: registered new interface driver hub
+Feb  6 15:37:12 tnaton kernel: [    0.450447] usbcore: registered new device driver usb
+Feb  6 15:37:12 tnaton kernel: [    0.450611] pps_core: LinuxPPS API ver. 1 registered
+Feb  6 15:37:12 tnaton kernel: [    0.450897] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+Feb  6 15:37:12 tnaton kernel: [    0.451165] PTP clock support registered
+Feb  6 15:37:12 tnaton kernel: [    0.451325] Advanced Linux Sound Architecture Driver Initialized.
+Feb  6 15:37:12 tnaton kernel: [    0.451325] NetLabel: Initializing
+Feb  6 15:37:12 tnaton kernel: [    0.451898] NetLabel:  domain hash size = 128
+Feb  6 15:37:12 tnaton kernel: [    0.452043] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+Feb  6 15:37:12 tnaton kernel: [    0.452224] NetLabel:  unlabeled traffic allowed by default
+Feb  6 15:37:12 tnaton kernel: [    0.452404] PCI: Using ACPI for IRQ routing
+Feb  6 15:37:12 tnaton kernel: [    0.452404] PCI: pci_cache_line_size set to 64 bytes
+Feb  6 15:37:12 tnaton kernel: [    0.452404] e820: reserve RAM buffer [mem 0x0009fc00-0x0009ffff]
+Feb  6 15:37:12 tnaton kernel: [    0.452404] e820: reserve RAM buffer [mem 0xdfff0000-0xdfffffff]
+Feb  6 15:37:12 tnaton kernel: [    0.452404] e820: reserve RAM buffer [mem 0x25a400000-0x25bffffff]
+Feb  6 15:37:12 tnaton kernel: [    0.452404] pci 0000:00:02.0: vgaarb: setting as boot VGA device
+Feb  6 15:37:12 tnaton kernel: [    0.452404] pci 0000:00:02.0: vgaarb: bridge control possible
+Feb  6 15:37:12 tnaton kernel: [    0.452404] pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+Feb  6 15:37:12 tnaton kernel: [    0.452898] vgaarb: loaded
+Feb  6 15:37:12 tnaton kernel: [    0.453165] clocksource: Switched to clocksource kvm-clock
+Feb  6 15:37:12 tnaton kernel: [    0.453369] VFS: Disk quotas dquot_6.6.0
+Feb  6 15:37:12 tnaton kernel: [    0.453545] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+Feb  6 15:37:12 tnaton kernel: [    0.453781] pnp: PnP ACPI init
+Feb  6 15:37:12 tnaton kernel: [    0.454241] pnp: PnP ACPI: found 2 devices
+Feb  6 15:37:12 tnaton kernel: [    0.463604] clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+Feb  6 15:37:12 tnaton kernel: [    0.463907] NET: Registered PF_INET protocol family
+Feb  6 15:37:12 tnaton kernel: [    0.464422] IP idents hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+Feb  6 15:37:12 tnaton kernel: [    0.465340] tcp_listen_portaddr_hash hash table entries: 8192 (order: 5, 131072 bytes, linear)
+Feb  6 15:37:12 tnaton kernel: [    0.465340] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+Feb  6 15:37:12 tnaton kernel: [    0.465340] TCP established hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+Feb  6 15:37:12 tnaton kernel: [    0.467083] TCP bind hash table entries: 65536 (order: 9, 2097152 bytes, linear)
+Feb  6 15:37:12 tnaton kernel: [    0.467719] TCP: Hash tables configured (established 131072 bind 65536)
+Feb  6 15:37:12 tnaton kernel: [    0.468208] MPTCP token hash table entries: 16384 (order: 6, 393216 bytes, linear)
+Feb  6 15:37:12 tnaton kernel: [    0.468341] UDP hash table entries: 8192 (order: 6, 262144 bytes, linear)
+Feb  6 15:37:12 tnaton kernel: [    0.468341] UDP-Lite hash table entries: 8192 (order: 6, 262144 bytes, linear)
+Feb  6 15:37:12 tnaton kernel: [    0.468341] NET: Registered PF_UNIX/PF_LOCAL protocol family
+Feb  6 15:37:12 tnaton kernel: [    0.469362] RPC: Registered named UNIX socket transport module.
+Feb  6 15:37:12 tnaton kernel: [    0.469542] RPC: Registered udp transport module.
+Feb  6 15:37:12 tnaton kernel: [    0.469693] RPC: Registered tcp transport module.
+Feb  6 15:37:12 tnaton kernel: [    0.469845] RPC: Registered tcp-with-tls transport module.
+Feb  6 15:37:12 tnaton kernel: [    0.470011] RPC: Registered tcp NFSv4.1 backchannel transport module.
+Feb  6 15:37:12 tnaton kernel: [    0.470488] pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+Feb  6 15:37:12 tnaton kernel: [    0.470671] pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+Feb  6 15:37:12 tnaton kernel: [    0.470851] pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+Feb  6 15:37:12 tnaton kernel: [    0.471045] pci_bus 0000:00: resource 7 [mem 0xe0000000-0xfdffffff window]
+Feb  6 15:37:12 tnaton kernel: [    0.471256] pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+Feb  6 15:37:12 tnaton kernel: [    0.472203] PCI: CLS 0 bytes, default 64
+Feb  6 15:37:12 tnaton kernel: [    0.472347] PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+Feb  6 15:37:12 tnaton kernel: [    0.472440] software IO TLB: mapped [mem 0x00000000dbff0000-0x00000000dfff0000] (64MB)
+Feb  6 15:37:12 tnaton kernel: [    0.473545] RAPL PMU: API unit is 2^-32 Joules, 0 fixed counters, 10737418240 ms ovfl timer
+Feb  6 15:37:12 tnaton kernel: [    0.473808] kvm_intel: VMX not supported by CPU 0
+Feb  6 15:37:12 tnaton kernel: [    0.473960] kvm_amd: CPU 0 isn't AMD or Hygon
+Feb  6 15:37:12 tnaton kernel: [    0.474106] clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x1e71768ef8b, max_idle_ns: 440795218977 ns
+Feb  6 15:37:12 tnaton kernel: [    0.474530] clocksource: Switched to clocksource tsc
+Feb  6 15:37:12 tnaton kernel: [    0.474704] platform rtc_cmos: registered platform RTC device (no PNP device found)
+Feb  6 15:37:12 tnaton kernel: [    0.478737] Initialise system trusted keyrings
+Feb  6 15:37:12 tnaton kernel: [    0.478989] workingset: timestamp_bits=40 max_order=22 bucket_order=0
+Feb  6 15:37:12 tnaton kernel: [    0.479327] NFS: Registering the id_resolver key type
+Feb  6 15:37:12 tnaton kernel: [    0.479488] Key type id_resolver registered
+Feb  6 15:37:12 tnaton kernel: [    0.479629] Key type id_legacy registered
+Feb  6 15:37:12 tnaton kernel: [    0.479832] 9p: Installing v9fs 9p2000 file system support
+Feb  6 15:37:12 tnaton kernel: [    0.485563] xor: automatically using best checksumming function   avx       
+Feb  6 15:37:12 tnaton kernel: [    0.485767] Key type asymmetric registered
+Feb  6 15:37:12 tnaton kernel: [    0.485909] Asymmetric key parser 'x509' registered
+Feb  6 15:37:12 tnaton kernel: [    0.486074] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 251)
+Feb  6 15:37:12 tnaton kernel: [    0.488207] io scheduler mq-deadline registered
+Feb  6 15:37:12 tnaton kernel: [    0.488914] io scheduler kyber registered
+Feb  6 15:37:12 tnaton kernel: [    0.490188] ACPI: AC: AC Adapter [AC] (on-line)
+Feb  6 15:37:12 tnaton kernel: [    0.490371] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input0
+Feb  6 15:37:12 tnaton kernel: [    0.490634] ACPI: button: Power Button [PWRF]
+Feb  6 15:37:12 tnaton kernel: [    0.490791] input: Sleep Button as /devices/LNXSYSTM:00/LNXSLPBN:00/input/input1
+Feb  6 15:37:12 tnaton kernel: [    0.491041] ACPI: button: Sleep Button [SLPF]
+Feb  6 15:37:12 tnaton kernel: [    0.491207] ACPI: video: Video Device [GFX0] (multi-head: yes  rom: no  post: no)
+Feb  6 15:37:12 tnaton kernel: [    0.491470] input: Video Bus as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A03:00/LNXVIDEO:00/input/input2
+Feb  6 15:37:12 tnaton kernel: [    0.492007] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+Feb  6 15:37:12 tnaton kernel: [    0.492523] Non-volatile memory driver v1.3
+Feb  6 15:37:12 tnaton kernel: [    0.492671] ACPI: bus type drm_connector registered
+Feb  6 15:37:12 tnaton kernel: [    0.495394] brd: module loaded
+Feb  6 15:37:12 tnaton kernel: [    0.496632] loop: module loaded
+Feb  6 15:37:12 tnaton kernel: [    0.497094] ahci 0000:00:0d.0: version 3.0
+Feb  6 15:37:12 tnaton kernel: [    0.497324] ahci 0000:00:0d.0: SSS flag set, parallel bus scan disabled
+Feb  6 15:37:12 tnaton kernel: [    0.497594] ahci 0000:00:0d.0: AHCI 0001.0100 32 slots 1 ports 3 Gbps 0x1 impl SATA mode
+Feb  6 15:37:12 tnaton kernel: [    0.497838] ahci 0000:00:0d.0: flags: 64bit ncq stag only ccc 
+Feb  6 15:37:12 tnaton kernel: [    0.498318] scsi host0: ahci
+Feb  6 15:37:12 tnaton kernel: [    0.498457] ata1: SATA max UDMA/133 abar m8192@0xf0806000 port 0xf0806100 irq 21 lpm-pol 0
+Feb  6 15:37:12 tnaton kernel: [    0.498721] ata_piix 0000:00:01.1: version 2.13
+Feb  6 15:37:12 tnaton kernel: [    0.499072] scsi host1: ata_piix
+Feb  6 15:37:12 tnaton kernel: [    0.499401] scsi host2: ata_piix
+Feb  6 15:37:12 tnaton kernel: [    0.499537] ata2: PATA max UDMA/33 cmd 0x1f0 ctl 0x3f6 bmdma 0xd000 irq 14 lpm-pol 0
+Feb  6 15:37:12 tnaton kernel: [    0.499773] ata3: PATA max UDMA/33 cmd 0x170 ctl 0x376 bmdma 0xd008 irq 15 lpm-pol 0
+Feb  6 15:37:12 tnaton kernel: [    0.500420] e100: Intel(R) PRO/100 Network Driver
+Feb  6 15:37:12 tnaton kernel: [    0.500582] e100: Copyright(c) 1999-2006 Intel Corporation
+Feb  6 15:37:12 tnaton kernel: [    0.500751] e1000: Intel(R) PRO/1000 Network Driver
+Feb  6 15:37:12 tnaton kernel: [    0.500907] e1000: Copyright (c) 1999-2006 Intel Corporation.
+Feb  6 15:37:12 tnaton kernel: [    0.656950] ata3.00: ATAPI: VBOX CD-ROM, 1.0, max UDMA/133
+Feb  6 15:37:12 tnaton kernel: [    0.657287] ata2.00: ATAPI: VBOX CD-ROM, 1.0, max UDMA/133
+Feb  6 15:37:12 tnaton kernel: [    0.807114] ata1: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+Feb  6 15:37:12 tnaton kernel: [    0.807784] ata1.00: ATA-6: VBOX HARDDISK, 1.0, max UDMA/133
+Feb  6 15:37:12 tnaton kernel: [    0.808145] ata1.00: 67108864 sectors, multi 128: LBA48 NCQ (depth 32)
+Feb  6 15:37:12 tnaton kernel: [    0.808942] ata1.00: configured for UDMA/133
+Feb  6 15:37:12 tnaton kernel: [    0.809527] scsi 0:0:0:0: Direct-Access     ATA      VBOX HARDDISK    1.0  PQ: 0 ANSI: 5
+Feb  6 15:37:12 tnaton kernel: [    0.810040] scsi 0:0:0:0: Attached scsi generic sg0 type 0
+Feb  6 15:37:12 tnaton kernel: [    0.810306] sd 0:0:0:0: [sda] 67108864 512-byte logical blocks: (34.4 GB/32.0 GiB)
+Feb  6 15:37:12 tnaton kernel: [    0.810553] sd 0:0:0:0: [sda] Write Protect is off
+Feb  6 15:37:12 tnaton kernel: [    0.810710] sd 0:0:0:0: [sda] Mode Sense: 00 3a 00 00
+Feb  6 15:37:12 tnaton kernel: [    0.810722] sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+Feb  6 15:37:12 tnaton kernel: [    0.811001] sd 0:0:0:0: [sda] Preferred minimum I/O size 512 bytes
+Feb  6 15:37:12 tnaton kernel: [    0.813553] scsi 1:0:0:0: CD-ROM            VBOX     CD-ROM           1.0  PQ: 0 ANSI: 5
+Feb  6 15:37:12 tnaton kernel: [    0.818438]  sda: sda1 sda2 sda3
+Feb  6 15:37:12 tnaton kernel: [    0.818854] sd 0:0:0:0: [sda] Attached SCSI disk
+Feb  6 15:37:12 tnaton kernel: [    0.819371] sr 1:0:0:0: [sr0] scsi3-mmc drive: 32x/32x xa/form2 tray
+Feb  6 15:37:12 tnaton kernel: [    0.819571] cdrom: Uniform CD-ROM driver Revision: 3.20
+Feb  6 15:37:12 tnaton kernel: [    0.823578] sr 1:0:0:0: Attached scsi CD-ROM sr0
+Feb  6 15:37:12 tnaton kernel: [    0.823672] sr 1:0:0:0: Attached scsi generic sg1 type 5
+Feb  6 15:37:12 tnaton kernel: [    0.826566] scsi 2:0:0:0: CD-ROM            VBOX     CD-ROM           1.0  PQ: 0 ANSI: 5
+Feb  6 15:37:12 tnaton kernel: [    0.841557] sr 2:0:0:0: [sr1] scsi3-mmc drive: 32x/32x xa/form2 tray
+Feb  6 15:37:12 tnaton kernel: [    0.907497] sr 2:0:0:0: Attached scsi CD-ROM sr1
+Feb  6 15:37:12 tnaton kernel: [    0.907659] sr 2:0:0:0: Attached scsi generic sg2 type 5
+Feb  6 15:37:12 tnaton kernel: [    0.917257] e1000 0000:00:03.0 eth0: (PCI:33MHz:32-bit) 08:00:27:aa:c9:aa
+Feb  6 15:37:12 tnaton kernel: [    0.917361] e1000 0000:00:03.0 eth0: Intel(R) PRO/1000 Network Connection
+Feb  6 15:37:12 tnaton kernel: [    0.917361] e1000e: Intel(R) PRO/1000 Network Driver
+Feb  6 15:37:12 tnaton kernel: [    0.917361] e1000e: Copyright(c) 1999 - 2015 Intel Corporation.
+Feb  6 15:37:12 tnaton kernel: [    0.917361] sky2: driver version 1.30
+Feb  6 15:37:12 tnaton kernel: [    0.918547] ohci-pci 0000:00:06.0: OHCI PCI host controller
+Feb  6 15:37:12 tnaton kernel: [    0.918927] ohci-pci 0000:00:06.0: new USB bus registered, assigned bus number 1
+Feb  6 15:37:12 tnaton kernel: [    0.919202] ohci-pci 0000:00:06.0: irq 22, io mem 0xf0804000
+Feb  6 15:37:12 tnaton kernel: [    1.106679] usb usb1: New USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 6.08
+Feb  6 15:37:12 tnaton kernel: [    1.106937] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Feb  6 15:37:12 tnaton kernel: [    1.107183] usb usb1: Product: OHCI PCI host controller
+Feb  6 15:37:12 tnaton kernel: [    1.107343] usb usb1: Manufacturer: Linux 6.8.0-thor_kerneltnaton-g99bd3cb0d12e-dirty ohci_hcd
+Feb  6 15:37:12 tnaton kernel: [    1.107580] usb usb1: SerialNumber: 0000:00:06.0
+Feb  6 15:37:12 tnaton kernel: [    1.108009] hub 1-0:1.0: USB hub found
+Feb  6 15:37:12 tnaton kernel: [    1.108153] hub 1-0:1.0: 12 ports detected
+Feb  6 15:37:12 tnaton kernel: [    1.108472] ehci-pci 0000:00:0b.0: EHCI Host Controller
+Feb  6 15:37:12 tnaton kernel: [    1.108698] usbcore: registered new interface driver usblp
+Feb  6 15:37:12 tnaton kernel: [    1.108863] ehci-pci 0000:00:0b.0: new USB bus registered, assigned bus number 2
+Feb  6 15:37:12 tnaton kernel: [    1.109194] ehci-pci 0000:00:0b.0: irq 19, io mem 0xf0805000
+Feb  6 15:37:12 tnaton kernel: [    1.109385] usbcore: registered new interface driver usb-storage
+Feb  6 15:37:12 tnaton kernel: [    1.109586] i8042: PNP: PS/2 Controller [PNP0303:PS2K,PNP0f03:PS2M] at 0x60,0x64 irq 1,12
+Feb  6 15:37:12 tnaton kernel: [    1.110380] serio: i8042 KBD port at 0x60,0x64 irq 1
+Feb  6 15:37:12 tnaton kernel: [    1.110537] serio: i8042 AUX port at 0x60,0x64 irq 12
+Feb  6 15:37:12 tnaton kernel: [    1.110856] mousedev: PS/2 mouse device common for all mice
+Feb  6 15:37:12 tnaton kernel: [    1.111679] rtc_cmos rtc_cmos: registered as rtc0
+Feb  6 15:37:12 tnaton kernel: [    1.111876] rtc_cmos rtc_cmos: alarms up to one day, 114 bytes nvram
+Feb  6 15:37:12 tnaton kernel: [    1.112062] fail to initialize ptp_kvm
+Feb  6 15:37:12 tnaton kernel: [    1.112223] device-mapper: ioctl: 4.48.0-ioctl (2023-03-01) initialised: dm-devel@redhat.com
+Feb  6 15:37:12 tnaton kernel: [    1.112857] intel_pstate: CPU model not supported
+Feb  6 15:37:12 tnaton kernel: [    1.113026] hid: raw HID events driver (C) Jiri Kosina
+Feb  6 15:37:12 tnaton kernel: [    1.113233] usbcore: registered new interface driver usbhid
+Feb  6 15:37:12 tnaton kernel: [    1.113395] usbhid: USB HID core driver
+Feb  6 15:37:12 tnaton kernel: [    1.114255] ipip: IPv4 and MPLS over IPv4 tunneling driver
+Feb  6 15:37:12 tnaton kernel: [    1.114485] gre: GRE over IPv4 demultiplexor driver
+Feb  6 15:37:12 tnaton kernel: [    1.114657] ip_gre: GRE over IPv4 tunneling driver
+Feb  6 15:37:12 tnaton kernel: [    1.114913] input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input3
+Feb  6 15:37:12 tnaton kernel: [    1.115223] Initializing XFRM netlink socket
+Feb  6 15:37:12 tnaton kernel: [    1.115451] NET: Registered PF_INET6 protocol family
+Feb  6 15:37:12 tnaton kernel: [    1.116204] Segment Routing with IPv6
+Feb  6 15:37:12 tnaton kernel: [    1.116350] In-situ OAM (IOAM) with IPv6
+Feb  6 15:37:12 tnaton kernel: [    1.116496] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+Feb  6 15:37:12 tnaton kernel: [    1.116743] ip6_gre: GRE over IPv6 tunneling driver
+Feb  6 15:37:12 tnaton kernel: [    1.116928] NET: Registered PF_PACKET protocol family
+Feb  6 15:37:12 tnaton kernel: [    1.117085] 8021q: 802.1Q VLAN Support v1.8
+Feb  6 15:37:12 tnaton kernel: [    1.117228] 9pnet: Installing 9P2000 support
+Feb  6 15:37:12 tnaton kernel: [    1.117328] ehci-pci 0000:00:0b.0: USB 2.0 started, EHCI 1.00
+Feb  6 15:37:12 tnaton kernel: [    1.117389] Key type dns_resolver registered
+Feb  6 15:37:12 tnaton kernel: [    1.117573] usb usb2: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.08
+Feb  6 15:37:12 tnaton kernel: [    1.117953] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Feb  6 15:37:12 tnaton kernel: [    1.118184] usb usb2: Product: EHCI Host Controller
+Feb  6 15:37:12 tnaton kernel: [    1.118352] usb usb2: Manufacturer: Linux 6.8.0-thor_kerneltnaton-g99bd3cb0d12e-dirty ehci_hcd
+Feb  6 15:37:12 tnaton kernel: [    1.118600] usb usb2: SerialNumber: 0000:00:0b.0
+Feb  6 15:37:12 tnaton kernel: [    1.118797] hub 2-0:1.0: USB hub found
+Feb  6 15:37:12 tnaton kernel: [    1.118930] hub 2-0:1.0: 12 ports detected
+Feb  6 15:37:12 tnaton kernel: [    1.119829] IPI shorthand broadcast: enabled
+Feb  6 15:37:12 tnaton kernel: [    1.121099] sched_clock: Marking stable (1096039248, 24240136)->(1165504057, -45224673)
+Feb  6 15:37:12 tnaton kernel: [    1.121691] registered taskstats version 1
+Feb  6 15:37:12 tnaton kernel: [    1.121859] Loading compiled-in X.509 certificates
+Feb  6 15:37:12 tnaton kernel: [    1.123142] Btrfs loaded, zoned=no, fsverity=no
+Feb  6 15:37:12 tnaton kernel: [    1.123332] PM:   Magic number: 12:490:636
+Feb  6 15:37:12 tnaton kernel: [    1.123483] power_supply AC: hash matches
+Feb  6 15:37:12 tnaton kernel: [    1.123632] printk: legacy console [netcon0] enabled
+Feb  6 15:37:12 tnaton kernel: [    1.123787] netconsole: network logging started
+Feb  6 15:37:12 tnaton kernel: [    1.123949] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+Feb  6 15:37:12 tnaton kernel: [    1.124357] kworker/u25:2 (133) used greatest stack depth: 14152 bytes left
+Feb  6 15:37:12 tnaton kernel: [    1.124890] Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+Feb  6 15:37:12 tnaton kernel: [    1.125261] Loaded X.509 cert 'wens: 61c038651aabdcf94bd0ac7ff06c7248db18c600'
+Feb  6 15:37:12 tnaton kernel: [    1.125499] platform regulatory.0: Direct firmware load for regulatory.db failed with error -2
+Feb  6 15:37:12 tnaton kernel: [    1.125794] cfg80211: failed to load regulatory.db
+Feb  6 15:37:12 tnaton kernel: [    1.125956] ALSA device list:
+Feb  6 15:37:12 tnaton kernel: [    1.126075]   No soundcards found.
+Feb  6 15:37:12 tnaton kernel: [    1.357272] input: ImExPS/2 Generic Explorer Mouse as /devices/platform/i8042/serio1/input/input5
+Feb  6 15:37:12 tnaton kernel: [    1.357784] md: Waiting for all devices to be available before autodetect
+Feb  6 15:37:12 tnaton kernel: [    1.357969] md: If you don't use raid, use raid=noautodetect
+Feb  6 15:37:12 tnaton kernel: [    1.358131] md: Autodetecting RAID arrays.
+Feb  6 15:37:12 tnaton kernel: [    1.358265] md: autorun ...
+Feb  6 15:37:12 tnaton kernel: [    1.358373] md: ... autorun DONE.
+Feb  6 15:37:12 tnaton kernel: [    1.368146] EXT4-fs (sda3): mounted filesystem e1b7bf57-6eb5-44f5-baf2-16d8478bce5c ro with ordered data mode. Quota mode: none.
+Feb  6 15:37:12 tnaton kernel: [    1.369570] VFS: Mounted root (ext4 filesystem) readonly on device 8:3.
+Feb  6 15:37:12 tnaton kernel: [    1.370350] devtmpfs: mounted
+Feb  6 15:37:12 tnaton kernel: [    1.371084] Freeing unused kernel image (initmem) memory: 2868K
+Feb  6 15:37:12 tnaton kernel: [    1.439817] Write protecting the kernel read-only data: 28672k
+Feb  6 15:37:12 tnaton kernel: [    1.440687] Freeing unused kernel image (rodata/data gap) memory: 1028K
+Feb  6 15:37:12 tnaton kernel: [    1.467858] x86/mm: Checked W+X mappings: passed, no W+X pages found.
+Feb  6 15:37:12 tnaton kernel: [    1.468052] x86/mm: Checking user space page tables
+Feb  6 15:37:12 tnaton kernel: [    1.494110] x86/mm: Checked W+X mappings: passed, no W+X pages found.
+Feb  6 15:37:12 tnaton kernel: [    1.494284] Run /sbin/init as init process
+Feb  6 15:37:12 tnaton kernel: [    1.494442]   with arguments:
+Feb  6 15:37:12 tnaton kernel: [    1.494442]     /sbin/init
+Feb  6 15:37:12 tnaton kernel: [    1.494443]   with environment:
+Feb  6 15:37:12 tnaton kernel: [    1.494443]     HOME=/
+Feb  6 15:37:12 tnaton kernel: [    1.494443]     TERM=linux
+Feb  6 15:37:12 tnaton kernel: [    1.494444]     BOOT_IMAGE=/vmlinuz-6.8-rc3-little-penguin
+Feb  6 15:37:12 tnaton kernel: [    1.509272] usb 1-1: new full-speed USB device number 2 using ohci-pci
+Feb  6 15:37:12 tnaton kernel: [    1.533332] stty (141) used greatest stack depth: 13024 bytes left
+Feb  6 15:37:12 tnaton kernel: [    1.627639] ip (252) used greatest stack depth: 12784 bytes left
+Feb  6 15:37:12 tnaton kernel: <30>[    1.656860] udevd[277]: Starting systemd-udevd version 254
+Feb  6 15:37:12 tnaton kernel: <30>[    1.662125] udevd[279]: Using default interface naming scheme 'v253'.
+Feb  6 15:37:12 tnaton kernel: [    1.722705] e1000 0000:00:03.0 enp0s3: renamed from eth0
+Feb  6 15:37:12 tnaton kernel: [    1.727047] vboxguest: host-version: 6.1.38r153438 0x8000000f
+Feb  6 15:37:12 tnaton kernel: [    1.727757] vbg_heartbeat_init: Setting up heartbeat to trigger every 2000 milliseconds
+Feb  6 15:37:12 tnaton kernel: [    1.728077] input: VirtualBox mouse integration as /devices/pci0000:00/0000:00:04.0/input/input6
+Feb  6 15:37:12 tnaton kernel: [    1.728526] vboxvideo 0000:00:02.0: vgaarb: deactivate vga console
+Feb  6 15:37:12 tnaton kernel: [    1.733939] Console: switching to colour dummy device 80x25
+Feb  6 15:37:12 tnaton kernel: [    1.734294] [drm] VRAM 01000000
+Feb  6 15:37:12 tnaton kernel: [    1.736611] usb 1-1: New USB device found, idVendor=80ee, idProduct=0021, bcdDevice= 1.00
+Feb  6 15:37:12 tnaton kernel: [    1.736621] usb 1-1: New USB device strings: Mfr=1, Product=3, SerialNumber=0
+Feb  6 15:37:12 tnaton kernel: [    1.736623] usb 1-1: Product: USB Tablet
+Feb  6 15:37:12 tnaton kernel: [    1.736624] usb 1-1: Manufacturer: VirtualBox
+Feb  6 15:37:12 tnaton kernel: [    1.737720] [drm] Initialized vboxvideo 1.0.0 20130823 for 0000:00:02.0 on minor 0
+Feb  6 15:37:12 tnaton kernel: [    1.745348] fbcon: vboxvideodrmfb (fb0) is primary device
+Feb  6 15:37:12 tnaton kernel: [    1.762558] vboxvideo 0000:00:02.0: [drm] drm_plane_enable_fb_damage_clips() not called
+Feb  6 15:37:12 tnaton kernel: [    1.764091] Console: switching to colour frame buffer device 240x67
+Feb  6 15:37:12 tnaton kernel: [    1.765730] vboxvideo 0000:00:02.0: [drm] fb0: vboxvideodrmfb frame buffer device
+Feb  6 15:37:12 tnaton kernel: [    1.766407] input: VirtualBox USB Tablet as /devices/pci0000:00/0000:00:06.0/usb1/1-1/1-1:1.0/0003:80EE:0021.0001/input/input7
+Feb  6 15:37:12 tnaton kernel: [    1.766919] hid-generic 0003:80EE:0021.0001: input,hidraw0: USB HID v1.10 Mouse [VirtualBox USB Tablet] on usb-0000:00:06.0-1/input0
+Feb  6 15:37:12 tnaton kernel: [    6.534087] Adding 1048572k swap on /dev/sda2.  Priority:1 extents:1 across:1048572k 
+Feb  6 15:37:12 tnaton kernel: [    7.042421] EXT4-fs (sda3): re-mounted e1b7bf57-6eb5-44f5-baf2-16d8478bce5c ro. Quota mode: none.
+Feb  6 15:37:12 tnaton kernel: [    7.432566] EXT4-fs (sda3): re-mounted e1b7bf57-6eb5-44f5-baf2-16d8478bce5c r/w. Quota mode: none.
+Feb  6 15:37:12 tnaton kernel: [    7.446993] EXT4-fs (sda1): mounted filesystem 52dc00d8-94ae-44f5-8ad4-8758fce1de7f r/w with ordered data mode. Quota mode: none.
+Feb  6 15:37:12 tnaton kernel: [    8.737978] 8021q: adding VLAN 0 to HW filter on device enp0s3
+Feb  6 15:37:12 tnaton kernel: [    8.738534] e1000: enp0s3 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+Feb  6 15:37:12 tnaton kernel: [    9.438773] bridge: filtering via arp/ip/ip6tables is no longer available by default. Update your scripts to load br_netfilter if you need this.
+Feb  6 15:37:12 tnaton kernel: [    9.439747] Bridge firewalling registered
+Feb  6 15:37:14 tnaton kernel: [   11.376264] Bluetooth: Core ver 2.22
+Feb  6 15:37:14 tnaton kernel: [   11.376775] NET: Registered PF_BLUETOOTH protocol family
+Feb  6 15:37:14 tnaton kernel: [   11.377144] Bluetooth: HCI device and connection manager initialized
+Feb  6 15:37:14 tnaton kernel: [   11.377412] Bluetooth: HCI socket layer initialized
+Feb  6 15:37:14 tnaton kernel: [   11.377663] Bluetooth: L2CAP socket layer initialized
+Feb  6 15:37:14 tnaton kernel: [   11.377877] Bluetooth: SCO socket layer initialized
+Feb  6 15:37:14 tnaton kernel: [   11.385896] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+Feb  6 15:37:14 tnaton kernel: [   11.386236] Bluetooth: BNEP filters: protocol multicast
+Feb  6 15:37:14 tnaton kernel: [   11.386619] Bluetooth: BNEP socket layer initialized
