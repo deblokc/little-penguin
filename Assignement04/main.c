@@ -7,7 +7,7 @@
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("tnaton");
-MODULE_DESCRIPTION("A simple hello world");
+MODULE_DESCRIPTION("A simple hello world when a keyboard is connected");
 
 /*
  * USB_INTERFACE_INFO create a usb_device_id
