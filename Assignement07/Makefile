@@ -10,6 +10,12 @@ default:
 	$(MAKE) -C $(KDIR) M=$$PWD
 
 clean:
+	rm test
 	$(MAKE) -C $(KDIR) M=$$PWD clean
+
+.PHONY: test
+test:
+	gcc test.c -o test
+	./test
 
 endif
