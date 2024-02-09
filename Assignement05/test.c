@@ -35,4 +35,5 @@ int main(void) {
 	printf("return value : % ld from write(fd, \"tnaton\", 6)\n", write(fd, "tnaton", 6));
 	printf("return value : %ld from write(fd, \"tnato\", 5)\n", write(fd, "tnato", 5));
 	printf("return value : %ld from write(fd, \"tnaton\", 5)\n", write(fd, "tnaton", 5));
+	printf("return value : %ld from write(fd, \"tnaton\\n\", 6)\n", write(fd, "tnaton\n", 6));
 }

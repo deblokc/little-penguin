@@ -9,7 +9,7 @@
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("tnaton");
-MODULE_DESCRIPTION("A simple hello world");
+MODULE_DESCRIPTION("A simple device");
 
 static ssize_t ft_read(struct file *f, char *buf, size_t len, loff_t *offset);
 static ssize_t ft_write(struct file *f, const char *buf, size_t len, loff_t *offset);
@@ -29,27 +29,25 @@ static ssize_t ft_read(struct file *f, char *buf, size_t len, loff_t *offset)
 {
 	int readlen;
 
-	if (!buf) {
+	if (!buf)
 		return -EINVAL;
-	} else if (*offset >= LOGIN_LEN) {
+	else if (*offset >= LOGIN_LEN)
 		return 0;
-	} else if (*offset + len > LOGIN_LEN) {
+	else if (*offset + len > LOGIN_LEN)
 		readlen = LOGIN_LEN - *offset;
-	} else {
+	else
 		readlen = len;
-	}
-	memcpy(buf, LOGIN + *offset, readlen);
+	readlen -= copy_to_user(buf, LOGIN + *offset, readlen);
 	*offset += readlen;
 	return (readlen);
 }
 
 static ssize_t ft_write(struct file *f, const char *buf, size_t len, loff_t *offset)
 {
-	if (!buf || len != LOGIN_LEN) {
+	if (!buf || len != LOGIN_LEN)
 		return -EINVAL;
-	} else if (strcmp(buf, LOGIN)) {
+	else if (strncmp(buf, LOGIN, len))
 		return -EINVAL;
-	}
 	return LOGIN_LEN;
 }
 
