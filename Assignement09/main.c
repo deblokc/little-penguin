@@ -9,7 +9,7 @@
 #include <linux/mount.h>
 #include <linux/mnt_namespace.h>
 #include <linux/list.h>
-#include "../linux/fs/mount.h"
+#include <linux/bpf.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("tnaton");
@@ -19,10 +19,8 @@ static struct proc_dir_entry *entry;
 
 static int mymount_show(struct seq_file *m, void *p)
 {
-	struct mount *mnt;
 //	current->nsproxy->mnt_ns->list;
-	list_for_each_entry(mnt, &current->nsproxy->mnt_ns->list, mnt_list)
-		seq_printf(m, "test\n");
+	
 	return 0;
 }
 
