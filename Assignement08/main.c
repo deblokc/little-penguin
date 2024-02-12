@@ -31,20 +31,27 @@ char *tmp;
 
 static int __init myfd_init(void)
 {
-	return misc_register(&myfd_device);
+	int error = misc_register(&myfd_device);
+	if (error)
+		return error;
+	return 0;
 }
 
-static void __exit myfd_cleanup(void) {}
+static void __exit myfd_cleanup(void) {
+	misc_deregister(&myfd_device);
+}
 
 ssize_t myfd_read(struct file *fp, char __user *user, size_t size, loff_t *offs)
 {
-	size_t t, i;
-	/***************
-	* Malloc like a boss
-	***************/
-	tmp = kmalloc(sizeof(char) * PAGE_SIZE * 2, GFP_KERNEL);
-	for (i = 0, t = strlen(str) - 1; t >= 0; t--, i++)
-		tmp[i] = str[t];
+	if (strlen(str) == 0)
+		return 0;
+
+	int j, i;
+	tmp = kmalloc(sizeof(char) * (strlen(str) + 1), GFP_KERNEL);
+	if (!tmp)
+		return -EINVAL;
+	for (i = 0, j = strlen(str) - 1; j >= 0; j--, i++)
+		tmp[i] = str[j];
 	tmp[i] = '\0';
 	return simple_read_from_buffer(user, size, offs, tmp, i);
 }
@@ -52,7 +59,7 @@ ssize_t myfd_read(struct file *fp, char __user *user, size_t size, loff_t *offs)
 ssize_t myfd_write(struct file *fp, const char __user *user, size_t size, loff_t *offs)
 {
 	ssize_t ret;
-	ret = simple_write_to_buffer(str, size, offs, user, size) + 1;
+	ret = simple_write_to_buffer(str, PAGE_SIZE - strlen(str), offs, user, size) + 1;
 	str[size + 1] = '\0';
 	return ret;
 }
