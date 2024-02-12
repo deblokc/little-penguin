@@ -43,10 +43,11 @@ static void __exit myfd_cleanup(void) {
 
 ssize_t myfd_read(struct file *fp, char __user *user, size_t size, loff_t *offs)
 {
+	int j;
+	int i;
+
 	if (strlen(str) == 0)
 		return 0;
-
-	int j, i;
 	tmp = kmalloc(sizeof(char) * (strlen(str) + 1), GFP_KERNEL);
 	if (!tmp)
 		return -EINVAL;
