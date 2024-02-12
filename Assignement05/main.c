@@ -3,6 +3,8 @@
 #include <linux/module.h>
 #include <linux/printk.h>
 #include <linux/miscdevice.h>
+#include <linux/fs.h>
+#include <linux/uaccess.h>
 
 #define LOGIN "tnaton"
 #define LOGIN_LEN 6
@@ -14,12 +16,12 @@ MODULE_DESCRIPTION("A simple device");
 static ssize_t ft_read(struct file *f, char *buf, size_t len, loff_t *offset);
 static ssize_t ft_write(struct file *f, const char *buf, size_t len, loff_t *offset);
 
-struct file_operations fops = {
+static const struct file_operations fops = {
 	.read = ft_read,
 	.write = ft_write,
 };
 
-struct miscdevice device = {
+static struct miscdevice device = {
 	.minor = MISC_DYNAMIC_MINOR,
 	.name = "fortytwo",
 	.fops = &fops,
