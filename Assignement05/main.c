@@ -44,9 +44,13 @@ static ssize_t ft_read(struct file *f, char *buf, size_t len, loff_t *offset)
 
 static ssize_t ft_write(struct file *f, const char *buf, size_t len, loff_t *offset)
 {
+	char tmp[LOGIN_LEN];
+
 	if (!buf || len != LOGIN_LEN)
 		return -EINVAL;
-	else if (strncmp(buf, LOGIN, len))
+	if (strncpy_from_user(tmp, buf, LOGIN_LEN) != LOGIN_LEN)
+		return -EFAULT;
+	if (strncmp(tmp, LOGIN, LOGIN_LEN))
 		return -EINVAL;
 	return LOGIN_LEN;
 }
