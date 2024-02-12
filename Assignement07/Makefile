@@ -10,7 +10,7 @@ default:
 	$(MAKE) -C $(KDIR) M=$$PWD
 
 clean:
-	rm test
+	rm -rf test
 	$(MAKE) -C $(KDIR) M=$$PWD clean
 
 .PHONY: test
