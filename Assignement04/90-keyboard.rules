@@ -1,0 +1,1 @@
+SUBSYSTEM=="usb", ACTION=="add", RUN="/usr/sbin/insmod /home/tnaton/little-penguin-1/Assignement04/main.ko"
