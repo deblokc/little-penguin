@@ -1,0 +1,12 @@
+[ 5945.351112] usb 1-2.4: USB disconnect, device number 6
+[ 5950.696220] usb 1-2.5: new full-speed USB device number 7 using uhci_hcd
+[ 5950.817120] usb 1-2.5: New USB device found, idVendor=0627, idProduct=0001, bcdDevice= 0.00
+[ 5950.817126] usb 1-2.5: New USB device strings: Mfr=1, Product=4, SerialNumber=11
+[ 5950.817142] usb 1-2.5: Product: QEMU USB Keyboard
+[ 5950.817143] usb 1-2.5: Manufacturer: QEMU
+[ 5950.817143] usb 1-2.5: SerialNumber: 68284-0000:00:01.2-2.5
+[ 5950.825389] input: QEMU QEMU USB Keyboard as /devices/pci0000:00/0000:00:01.2/usb1/1-2/1-2.5/1-2.5:1.0/0003:0627:0001.0005/input/input8
+[ 5950.877387] hid-generic 0003:0627:0001.0005: input,hidraw0: USB HID v1.11 Keyboard [QEMU QEMU USB Keyboard] on usb-0000:00:01.2-2.5/input0
+[ 5950.880994] Hello world !
+[ 5950.881032] usbcore: registered new interface driver my_driver
+
