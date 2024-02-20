@@ -1,2 +1,1 @@
 SUBSYSTEM=="usb", ACTION=="add", ATTR{bInterfaceProtocol}=="01", RUN="/usr/sbin/insmod /home/tnaton/little-penguin-1/Assignement04/main.ko"
-SUBSYSTEM=="usb", ACTION=="remove", ENV{bInterfaceProtocol}=="01", RUN="/usr/sbin/rmmod /home/tnaton/little-penguin-1/Assignement04/main.ko"
